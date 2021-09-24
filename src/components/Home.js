@@ -70,7 +70,7 @@ function Home() {
   const getData = async () => {
     setLoading(true);
     await axios
-      .get("http://pikpart-staging.herokuapp.com/api/vehicle/models")
+      .get("https://devapi.pikpart.com/api/vehicle/models")
       .then((response) => {
         console.log(response.data.data[0]);
         setVehicalData(response.data.data);
